@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* @media screen and (min-width: 375px) and (max-width: 767px){} */
+
+/* 레어아웃 */
+.container{width: 90%; margin: 0 38px;}
+#header{width: 100%; height: 375px; padding: 20px; background: url(../img/tablet/커버2_720x502.png) bottom/cover; box-sizing: border-box;}
+#header .container{display: none;}
+#tabletHeader{width: 100%; display: block; position: relative; height: 100%;}
+#tabletNav{width: 100%; position: fixed; top: 0; height: 67px; padding: 20px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; transition: all .5s; z-index: 2;}
+#tabletNav.on{background: #000;}
+#nav{display: none; position: absolute; top: 0; right: 0; width: 185px; height: 829px; background: #000; padding: 20px 20px 16px; z-index: 9;}
+
+/* HEADER */
+.tablet-header{position: absolute; bottom: 0;}
+.tablet-header img{margin: 22px 0;}
+
+/* NAVIGATION */
+#tabletNav .logo{display: inline-block;}
+#tabletNav .logo img{display: inline-block;}
+#tabletNav .nav-control{font-size: 20px;}
+.nav-control i{cursor: pointer;}
+.nav-control i.on{color: #fff;}
+.nav-control .fa-search{margin: auto 20px;}
+.menu-bar{display: none;}
+.logo-wrap{display: none;}
+
+/* MAIN */
+#main #albumSubject{margin: 18px 0 15px;}
+#albumSubject>div{padding: 0 0 30px; border-bottom: none;}
+#albumSubject>div .arrow-btn{width: 37px; height: 37px; background-color: rgba(204, 204, 204, .3); border-radius: 50%;}
+#albumSubject>div>div.arrow-left{background: rgba(204, 204, 204, .3) url(../img/SVG/allbumBtnL_on.svg) no-repeat 13px center/20%; left: -20px;}
+#albumSubject>div>div.arrow-left:hover{background: rgba(204, 204, 204, 1) url(../img/SVG/allbumBtnL_on.svg) no-repeat 13px center/20%;}
+#albumSubject>div>div.arrow-right{background: rgba(204, 204, 204, .3) url(../img/SVG/allbumBtnR_on.svg) no-repeat 17px center/20%; right: -20px;}
+#albumSubject>div>div.arrow-right:hover{background: rgba(204, 204, 204, 1) url(../img/SVG/allbumBtnR_on.svg) no-repeat 17px center/20%;}
+#albumSubject>div ul>li{margin-right: 25px;}
+#albumSubject>div ul>li>a>p{margin-top: 8px; font-size: 17px;}
+
+/* BANNER */
+#download .download{height: 250px; padding: 33px 0 28px;}
+.download div:first-child{width: 99px; height: 61px;}
+.download h4{font-size: 20px; margin-bottom: 4px;}
+.download p{font-size: 14px;}
+.download .store{width: 309px;}
+.download .store a{margin-top: 14px;}
+.download .store a img{width: 150px; height: 48px;}
+#download .banner{margin-top: 50px;}
+.banner h5{font-size: 24px;}
+.banner p{font-size: 15px; margin: 6px auto 32px; color: #939393; width: 351px;}
+
+/* FOOTER */
+#footer{height: 314px;}
+#footer a{font-size: 14px;}
+#footer .top{position: relative;}
+.notice{float: none;}
+.terms{position: absolute; top: 207.4px; left: 50%; transform: translateX(-50%); width: 600px; float: none; text-align: center;}
+.terms a{margin-left: 12px;}
+#footer .bottom{border-bottom: 1px solid rgba(30, 30, 30, .05); position: relative;}
+.info{float: none;}
+.sns{position: absolute; top: 213px; left: 50%; transform: translateX(-50%);}
+.sns a:first-child{margin-left: 0;}
+
+/* PLAYLIST BAR */
+.playbar-wrap{height: 70px;}
+.song-info a img{display: none;}
+.song-info .length{margin-right: 9px;}
+.song-info .length>a{width: 116px;}
+.song-info .length .song-tit{font-size: 16px; line-height: 23px;}
+.song-info .length .song-art{font-size: 15px;}
+.song-info .selector>div{margin-right: 14px;}
+.control{width: 136px;}
+.control .shuffle{display: none;}
+.control .repeat{display: none;}
+.sound p, .sound div{display: none;}
+.song-list-btn{width: 70px; height: 100%; border-left: none;}
+.song-list-open{border-left: none; background: #ff0050; width: 70px;}
+.song-list-btn img{width: auto; height: 26px; margin: 22px auto;}
+
+@media screen and (min-width: 375px) and (max-width: 542px){}
